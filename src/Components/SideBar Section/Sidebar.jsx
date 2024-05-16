@@ -11,7 +11,7 @@ import {
   MdOutlineExplore,
   MdOutlinePermContactCalendar,
 } from "react-icons/md";
-import { BsCreditCard2Front, BsTrophy } from "react-icons/bs";
+import { BsCreditCard2Front, BsQuestionCircle, BsTrophy } from "react-icons/bs";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { BiTrendingUp } from "react-icons/bi";
 
@@ -20,7 +20,7 @@ function sidebar() {
     <div className="sideBar grid">
       <div className="logoDiv flex">
         <img src={logo} alt="Image Name" />
-        <h2>Cofi.</h2>
+        <h2>CoffISky.</h2>
       </div>
 
       <div className="menuDiv">
@@ -85,6 +85,21 @@ function sidebar() {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="sideBarCard">
+        <BsQuestionCircle className="icon" />
+        <div className="cardContent">
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+
+          <h3>Help Center</h3>
+          <p>
+            Having trouble in CoffISkye, please contact us from for more
+            questions
+          </p>
+          <button className="btn">Go to help center</button>
+        </div>
       </div>
     </div>
   );

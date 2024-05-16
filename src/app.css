@@ -45,6 +45,7 @@ li {
 
 .icon {
   font-size: var(--h2FontSize);
+  cursor: pointer;
 }
 
 img {
@@ -59,7 +60,6 @@ img {
 
 .grid {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -102,4 +102,9 @@ body {
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 2px 2px 8px var(--greyText);
+}
+
+/* Hide the scroll thumb */
+::-webkit-scrollbar {
+  display: none;
 }
